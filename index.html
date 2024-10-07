@@ -18,22 +18,13 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
         .logo-container {
-            position: relative;
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 20px;
         }
-        .logo-1 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            max-width: 100px; /* Adjust size as needed */
-            height: auto;
-        }
-        .logo-2 {
-            display: block;
-            margin: 0 auto; /* Centers logo 2 horizontally */
+        .logo-container img {
             max-width: 100px; /* Adjust size as needed */
             height: auto;
         }
@@ -42,12 +33,6 @@
             height: 200px; /* Adjust height as needed */
             border: none;
         }
-
-        .custom-text {
-            font-family: 'Courier New', Courier, monospace; /* Custom font */
-            color: #3498db; /* Custom color (blue) */
-            font-size: 1.2em; /* Slightly larger font size */
-        }
     </style>
 </head>
 <body>
@@ -55,9 +40,11 @@
     <div class="container">
         <div class="logo-container">
             <!-- Logo 1 stays at the top left corner -->
-            <img class="logo-1" src="Images/Image1.webp" alt="Logo 1">
+            <img  src="Images/Image1.avif" alt="Logo 1">
             <!-- Logo 2 is centered -->
-            <img class="logo-2" src="Images/Image2.avif" alt="Logo 2">
+            <a href="https://device.pcloudy.com/" target="_blank">
+                <img  src="Images/Image2.avif" alt="Logo 2">
+            </a>
         </div>
 
         <h1 class="custom-text">Welcome to My Web Page</h1>
